@@ -1,0 +1,105 @@
+/* Page Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Optional Bounce Animation Example
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+*/
+
+h1{
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  background:  #404142;
+  margin: 0;
+  padding: 40px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+   
+}
+
+.page-heading {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #2a2b2c;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px 10px 10px;
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+h2{
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+  font-family: "Xanh Mono", monospace;
+  font-weight: 999;
+  font-style: italic;
+
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.buy-btn {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Corben", serif;
+  font-weight: 400;
+  font-size:smaller;
+  font-style: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size:medium;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
